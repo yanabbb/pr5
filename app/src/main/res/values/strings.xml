@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">pr5</string>
+
+    <string name="fragment_main_text_view">Введите дату для брони</string>
+    <string name="fragment_main_egit_text_hint">Дата в формате ДД.ММ.ГГГГ</string>
+    <string name="fragment_main_button_text">Далее</string>
+
+    <string name="fragment_first_text_view_1_text">Вы выбрали дату:</string>
+    <string name="fragment_first_text_view_3_text">Введите количество человек</string>
+    <string name="fragment_first_egit_text_hint">Количество человек</string>
+    <string name="fragment_first_button_text">Забронировать</string>
+
+    <string name="fragment_second_text_view_text">Вы забронировали:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

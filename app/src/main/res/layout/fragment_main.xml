@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/firstFragment">
+
+    <TextView
+        android:id="@+id/fragment_main_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:text="@string/fragment_main_text_view"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fragment_main_edit_text"
+        android:layout_width="257dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="144dp"
+        android:hint="@string/fragment_main_egit_text_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_main_text_view" />
+
+    <Button
+        android:id="@+id/fragment_main_button"
+        android:layout_width="199dp"
+        android:layout_height="60dp"
+        android:text="@string/fragment_main_button_text"
+
+        android:backgroundTint="@color/button_first"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_main_edit_text"
+        app:layout_constraintVertical_bias="0.643" />
+</androidx.constraintlayout.widget.ConstraintLayout>
