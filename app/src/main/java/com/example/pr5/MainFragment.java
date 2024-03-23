@@ -26,29 +26,7 @@ public class MainFragment extends Fragment {
         super(R.layout.fragment_main);
     }
 
-//    @Override
-//    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-//        super.onViewCreated(view, savedInstanceState);
-//
-//        main_fragment_button = view.findViewById(R.id.fragment_main_button);
-//        main_fragment_edit_text = view.findViewById(R.id.fragment_main_edit_text);
-//
-//        main_fragment_button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                String date = main_fragment_edit_text.getText().toString();
-//
-//                if (date.length() > 0) {
-//                    Bundle bundle = new Bundle();
-//                    bundle.putString("date", date);
-//                    Navigation.findNavController(view).navigate(R.id.action_mainFragment_to_firstFragment, bundle);
-//                } else {
-//                    main_fragment_edit_text.setText("");
-//                    main_fragment_edit_text.setHint(getResources().getString(R.string.fragment_main_egit_text_hint));
-//                }
-//            }
-//        });
-//    }
+
 @Override
 public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
     super.onViewCreated(view, savedInstanceState);
@@ -62,7 +40,7 @@ public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceStat
             String date = main_fragment_edit_text.getText().toString();
             NavController navController = Navigation.findNavController(view);
 
-            if (date.length() > 0) {
+            if (!date.isEmpty()) {
                 ArrayList<String> Data =  new ArrayList<String>();
                 Data.add(date);
 
@@ -86,15 +64,5 @@ public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceStat
         }
     }
 
-//    static class DataHolder {
-//        private static String date;
-//
-//        public static String getDate() {
-//            return date;
-//        }
-//
-//        public static void setDate(String date) {
-//            DataHolder.date = date;
-//        }
-//    }
+
 }

@@ -36,11 +36,14 @@ public class FirstFragment extends Fragment {
         first_fragment_text_view = (TextView) getActivity().findViewById(R.id.fragment_first_text_view2);
         first_fragment_edit_text = (EditText) getActivity().findViewById(R.id.fragment_first_edit_text);
 
-        //String good_name = parseInputsGoods(this.getArguments().getStringArrayList("goodName"),
-                //GoodParameterType.GOOD_NAME);
-        //first_fragment_text_view.setText(date);
-        Bundle bundle = getArguments();
-        String date = bundle.getString("date");
+
+        Bundle bundle = this.getArguments();
+        ArrayList Data = bundle.getStringArrayList("date");
+        String date = Data.get(0).toString();
+
+        first_fragment_text_view.setText(date);
+
+
 
         first_fragment_button.setOnClickListener(new View.OnClickListener() {
             @Override

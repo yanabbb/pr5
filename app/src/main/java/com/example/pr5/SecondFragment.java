@@ -26,14 +26,15 @@ public class SecondFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        second_fragment_text_view = view.findViewById(R.id.fragment_second_text_view2);
+        second_fragment_text_view = (TextView) getActivity().findViewById(R.id.fragment_second_text_view2);
+
 
         Bundle bundle = getArguments();
         if (bundle != null) {
             ArrayList<String> Data = bundle.getStringArrayList("date&amount");
-            if (Data != null && Data.size() >= 2) {
-                String date = Data.get(0);
-                String amount = Data.get(1);
+            if (Data != null && Data.size() >= 1) {
+                String date = Data.get(0).toString();
+                String amount = Data.get(1).toString();
 
                 String result = date + " числа на " + amount + " человек";
 
