@@ -9,6 +9,7 @@
     <string name="fragment_first_text_view_3_text">Введите количество человек</string>
     <string name="fragment_first_egit_text_hint">Количество человек</string>
     <string name="fragment_first_button_text">Забронировать</string>
+    <string name="fragment_second_button">Получить уведомление</string>
 
     <string name="fragment_second_text_view_text">Вы забронировали:</string>
     <!-- TODO: Remove or change this placeholder text -->
